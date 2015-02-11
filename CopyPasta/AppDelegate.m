@@ -20,30 +20,31 @@ CGEventRef copyPasta(CGEventTapProxy proxy, CGEventType type,  CGEventRef event,
     keycode = CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode);
     commandkey = (eventMask & kCGEventFlagMaskCommand) != 0;
     
-    NSPasteboard *clipboard = [NSPasteboard generalPasteboard];
-    NSString *data = [clipboard stringForType:NSPasteboardTypeString];
-    NSData *cleaned = [data dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
-    NSString *new_clean = [[NSString alloc] initWithData:cleaned encoding:NSASCIIStringEncoding];
-    
-    NSCharacterSet *whitespaces = [NSCharacterSet whitespaceCharacterSet];
-    NSPredicate *noEmptyStrings = [NSPredicate predicateWithFormat:@"SELF != ''"];
-    
-    NSArray *parts = [new_clean componentsSeparatedByCharactersInSet:whitespaces];
-    NSArray *filteredArray = [parts filteredArrayUsingPredicate:noEmptyStrings];
-    NSString *spatial_clean = [filteredArray componentsJoinedByString:@" "];
-    
     if ((keycode == (CGKeyCode)9) && commandkey) {
+        
+        NSPasteboard *clipboard = [NSPasteboard generalPasteboard];
+        NSString *data = [clipboard stringForType:NSPasteboardTypeString];
+        NSData *cleaned = [data dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+        NSString *new_clean = [[NSString alloc] initWithData:cleaned encoding:NSASCIIStringEncoding];
+        
+        NSCharacterSet *whitespaces = [NSCharacterSet whitespaceCharacterSet];
+        NSPredicate *noEmptyStrings = [NSPredicate predicateWithFormat:@"SELF != ''"];
+        
+        NSArray *parts = [new_clean componentsSeparatedByCharactersInSet:whitespaces];
+        NSArray *filteredArray = [parts filteredArrayUsingPredicate:noEmptyStrings];
+        NSString *spatial_clean = [filteredArray componentsJoinedByString:@" "];
+        
         if (stripFormatting) {
             [[NSPasteboard generalPasteboard] clearContents];
-            [[NSPasteboard generalPasteboard] setString:new_clean  forType:NSStringPboardType];
+            [[NSPasteboard generalPasteboard] setString:new_clean forType:NSStringPboardType];
         }
         
         if (stripSpatial) {
             [[NSPasteboard generalPasteboard] clearContents];
-            [[NSPasteboard generalPasteboard] setString:spatial_clean  forType:NSStringPboardType];
+            [[NSPasteboard generalPasteboard] setString:spatial_clean forType:NSStringPboardType];
         }
-        
     }
+    
     return event;
 }
 
@@ -79,7 +80,6 @@ CGEventRef copyPasta(CGEventTapProxy proxy, CGEventType type,  CGEventRef event,
     BOOL accessibilityEnabled = AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)options);
     
     if(!accessibilityEnabled) {
-        // Exit
         return [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
     }
     

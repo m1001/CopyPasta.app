@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C09733E61A8A77760015BB86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C09733E51A8A77760015BB86 /* AppDelegate.m */; };
+		C09733E81A8A77760015BB86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C09733E71A8A77760015BB86 /* main.m */; };
+		C09733ED1A8A77760015BB86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09733EC1A8A77760015BB86 /* Images.xcassets */; };
+		C09733F01A8A77760015BB86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09733EE1A8A77760015BB86 /* Main.storyboard */; };
+		C09733FC1A8A77760015BB86 /* CopyPastaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C09733FB1A8A77760015BB86 /* CopyPastaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C09733F61A8A77760015BB86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C09733D71A8A77760015BB86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C09733DE1A8A77760015BB86;
+			remoteInfo = CopyPasta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C09733DF1A8A77760015BB86 /* CopyPasta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopyPasta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09733E31A8A77760015BB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C09733E41A8A77760015BB86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C09733E51A8A77760015BB86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C09733E71A8A77760015BB86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C09733EC1A8A77760015BB86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C09733EF1A8A77760015BB86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C09733F51A8A77760015BB86 /* CopyPastaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyPastaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09733FA1A8A77760015BB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C09733FB1A8A77760015BB86 /* CopyPastaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyPastaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C09733DC1A8A77760015BB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09733F21A8A77760015BB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C09733D61A8A77760015BB86 = {
+			isa = PBXGroup;
+			children = (
+				C09733E11A8A77760015BB86 /* CopyPasta */,
+				C09733F81A8A77760015BB86 /* CopyPastaTests */,
+				C09733E01A8A77760015BB86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C09733E01A8A77760015BB86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C09733DF1A8A77760015BB86 /* CopyPasta.app */,
+				C09733F51A8A77760015BB86 /* CopyPastaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C09733E11A8A77760015BB86 /* CopyPasta */ = {
+			isa = PBXGroup;
+			children = (
+				C09733E41A8A77760015BB86 /* AppDelegate.h */,
+				C09733E51A8A77760015BB86 /* AppDelegate.m */,
+				C09733EC1A8A77760015BB86 /* Images.xcassets */,
+				C09733EE1A8A77760015BB86 /* Main.storyboard */,
+				C09733E21A8A77760015BB86 /* Supporting Files */,
+			);
+			path = CopyPasta;
+			sourceTree = "<group>";
+		};
+		C09733E21A8A77760015BB86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C09733E31A8A77760015BB86 /* Info.plist */,
+				C09733E71A8A77760015BB86 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C09733F81A8A77760015BB86 /* CopyPastaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C09733FB1A8A77760015BB86 /* CopyPastaTests.m */,
+				C09733F91A8A77760015BB86 /* Supporting Files */,
+			);
+			path = CopyPastaTests;
+			sourceTree = "<group>";
+		};
+		C09733F91A8A77760015BB86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C09733FA1A8A77760015BB86 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C09733DE1A8A77760015BB86 /* CopyPasta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09733FF1A8A77760015BB86 /* Build configuration list for PBXNativeTarget "CopyPasta" */;
+			buildPhases = (
+				C09733DB1A8A77760015BB86 /* Sources */,
+				C09733DC1A8A77760015BB86 /* Frameworks */,
+				C09733DD1A8A77760015BB86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CopyPasta;
+			productName = CopyPasta;
+			productReference = C09733DF1A8A77760015BB86 /* CopyPasta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C09733F41A8A77760015BB86 /* CopyPastaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09734021A8A77760015BB86 /* Build configuration list for PBXNativeTarget "CopyPastaTests" */;
+			buildPhases = (
+				C09733F11A8A77760015BB86 /* Sources */,
+				C09733F21A8A77760015BB86 /* Frameworks */,
+				C09733F31A8A77760015BB86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C09733F71A8A77760015BB86 /* PBXTargetDependency */,
+			);
+			name = CopyPastaTests;
+			productName = CopyPastaTests;
+			productReference = C09733F51A8A77760015BB86 /* CopyPastaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C09733D71A8A77760015BB86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = m1001;
+				TargetAttributes = {
+					C09733DE1A8A77760015BB86 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C09733F41A8A77760015BB86 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = C09733DE1A8A77760015BB86;
+					};
+				};
+			};
+			buildConfigurationList = C09733DA1A8A77760015BB86 /* Build configuration list for PBXProject "CopyPasta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C09733D61A8A77760015BB86;
+			productRefGroup = C09733E01A8A77760015BB86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C09733DE1A8A77760015BB86 /* CopyPasta */,
+				C09733F41A8A77760015BB86 /* CopyPastaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C09733DD1A8A77760015BB86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09733ED1A8A77760015BB86 /* Images.xcassets in Resources */,
+				C09733F01A8A77760015BB86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09733F31A8A77760015BB86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C09733DB1A8A77760015BB86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09733E81A8A77760015BB86 /* main.m in Sources */,
+				C09733E61A8A77760015BB86 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09733F11A8A77760015BB86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09733FC1A8A77760015BB86 /* CopyPastaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C09733F71A8A77760015BB86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C09733DE1A8A77760015BB86 /* CopyPasta */;
+			targetProxy = C09733F61A8A77760015BB86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C09733EE1A8A77760015BB86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C09733EF1A8A77760015BB86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C09733FD1A8A77760015BB86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C09733FE1A8A77760015BB86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C09734001A8A77760015BB86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				INFOPLIST_FILE = CopyPasta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		C09734011A8A77760015BB86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				INFOPLIST_FILE = CopyPasta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		C09734031A8A77760015BB86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CopyPastaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopyPasta.app/Contents/MacOS/CopyPasta";
+			};
+			name = Debug;
+		};
+		C09734041A8A77760015BB86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CopyPastaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopyPasta.app/Contents/MacOS/CopyPasta";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C09733DA1A8A77760015BB86 /* Build configuration list for PBXProject "CopyPasta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09733FD1A8A77760015BB86 /* Debug */,
+				C09733FE1A8A77760015BB86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09733FF1A8A77760015BB86 /* Build configuration list for PBXNativeTarget "CopyPasta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09734001A8A77760015BB86 /* Debug */,
+				C09734011A8A77760015BB86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09734021A8A77760015BB86 /* Build configuration list for PBXNativeTarget "CopyPastaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09734031A8A77760015BB86 /* Debug */,
+				C09734041A8A77760015BB86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C09733D71A8A77760015BB86 /* Project object */;
+}
